@@ -4,11 +4,11 @@ from requests import post
 from dotenv import load_dotenv
 import os
 
-
-MAILGUN_API_KEY = 'MAILGUN_API_KEY'
-MAILGUN_DOMAIN = 'MAILGUN_DOMAIN'
-FROM_TITLE = 'FROM_TITLE'
-FROM_EMAIL = 'FROM_EMAIL'
+load_dotenv()
+MAILGUN_API_KEY = os.getenv('MAILGUN_API_KEY')
+MAILGUN_DOMAIN = os.getenv('MAILGUN_DOMAIN')
+FROM_TITLE = os.getenv('FROM_TITLE')
+FROM_EMAIL = os.getenv('FROM_EMAIL')
 
 
 class UserModel(banco.Model):
