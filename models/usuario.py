@@ -1,11 +1,14 @@
 from sql_Alchemy import banco
 from flask import request,url_for
 from requests import post
+from dotenv import load_dotenv
+import os
 
-MAILGUN_API_KEY = 'f03c92a8bf338efd12b777276c489162-667818f5-f15a59a8'
-MAILGUN_DOMAIN = 'sandboxc077821eaa4e426e8ce9b563a0dd7316.mailgun.org'
-FROM_TITLE = 'NO-REPLY'
-FROM_EMAIL = 'no-reply@RESTAPI.COM'
+
+MAILGUN_API_KEY = 'MAILGUN_API_KEY'
+MAILGUN_DOMAIN = 'MAILGUN_DOMAIN'
+FROM_TITLE = 'FROM_TITLE'
+FROM_EMAIL = 'FROM_EMAIL'
 
 
 class UserModel(banco.Model):
