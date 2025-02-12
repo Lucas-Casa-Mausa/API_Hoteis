@@ -1,0 +1,22 @@
+# Ignorar o ambiente virtual
+venv/
+.env
+*.pyc
+__pycache__/
+ambvir/
+
+# Ignorar banco de dados SQLite
+banco.db
+*.sqlite3
+
+# Ignorar logs e arquivos de cache
+*.log
+*.cache
+
+# Ignorar credenciais secretas
+secret_key.txt
+
+# Ignorar arquivos do VS Code e sistema
+.vscode/
+*.swp
+.DS_Store
